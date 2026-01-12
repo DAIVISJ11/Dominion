@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body style="background-color: rgb(226, 43, 43); ">
+    <h1 id="Heading" style="color: blue; padding: 20px ; background: green; border: 20px solid rgb(255, 102, 0); text-align: center;"> I love HTML</h1>
+    <p id="text"> let's learn about HTML DOM</p>
+    <script>
+        let div = document.createElement('div');
+        div.id = "paragragh"
+        div.className = "alert";
+        div.innerHTML = "<p>Congrats! you have created a div.</p>";
+        document.body.append(div);
+
+        let heading = document.getElementById("Heading");
+        heading.style.color = '#12851';
+
+
+
+
+        document.getElementById('text').innerHTML=
+        "<strong> Good Job !</strong>";
+    </script>
+</body>
+</html>
