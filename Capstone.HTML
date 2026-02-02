@@ -15,5 +15,27 @@
     <a href="#Contact_us">Contact_us</a>
    </div> 
    
+   <section>
+    <img src="de6f6e35f2c6a611ddac365316e03bc1_large.jpeg" alt="" class="My_Slides" style="width: 500px;">
+    <img src="ece5d51fceb19374ac5286f65a7b24a8.jpg" alt="" class="My_Slides" style="width: 500px;">
+    <img src="Lynx 2.jpg" alt="" class="My_Slides" style=" width: 500px;">
+    <img src="Bobcat.jpg" alt="" class="My_Slides" style="width: 500px;">
+   </section>
+   <script>
+    var myIndex = 0;
+    carousel();
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("My_Slides")
+
+        for (i=0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1 }
+        x[myIndex-1].style.display = "block"
+        setTimeout(carousel, 3000);
+    }
+   </script>
 </body>
 </html>
