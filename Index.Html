@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
-    <link rel="stylesheet" href="Style.CSS">
+    <link rel="stylesheet" href="Capstone.CSS">
     
 </head>
 <body>
@@ -14,6 +14,28 @@
     <a href="#Gallery">Gallery</a>
     <a href="#Contact_us">Contact_us</a>
    </div> 
-   
+   <section>
+    <img src="clouded_leopard_11.jpg" alt="" class="My_Slides" style="width: 500px;">
+    <img src="Tiger 2.jpg" alt="" class="My_Slides" style="width: 500px;">
+    <img src="tigon_crossbreed_l.jpg" alt="" class="My_Slides" style=" width: 500px;">
+    <img src="female-liger.jpg" alt="" class="My_Slides" style="width: 500px;">
+    <img src="African-Lion_Visit-Africa-5.jpg" alt="" class="My_Slides" style="width: 500px;">
+   </section>
+   <script>
+    var myIndex = 0;
+    carousel();
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("My_Slides")
+
+        for (i=0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1 }
+        x[myIndex-1].style.display = "block"
+        setTimeout(carousel, 3000);
+    }
+   </script>
 </body>
 </html>
